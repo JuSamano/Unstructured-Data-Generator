@@ -51,8 +51,4 @@ Where `YYYY-MM-DD` is today's date and `XXXXXXX` is a unique 8-character ID.
 - **XML**: Root element "people" with "person" child elements
 - **CSV**: Tabular data with headers: name, age, city, email, phone, occupation
 
-## Notes
-
-- The output directory is currently hardcoded to `C:\Users\DATA` on Windows. You may need to modify the `output_dir` variable in the script for different systems.
-- Email field is optional and appears randomly in about half the records.
-- Number of records varies between 1000-2000 per run.
+The files are saved in a `DATA` directory created in the same folder as the script.

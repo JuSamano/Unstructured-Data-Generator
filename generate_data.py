@@ -54,7 +54,7 @@ def generate_csv_data(people):
 
 def main():
     """Main function to generate and save data files."""
-    output_dir = r"C:\Users\jusamano\OneDrive - Microsoft\Documents\DATA"
+    output_dir = os.path.join(os.path.dirname(__file__), "DATA")
     os.makedirs(output_dir, exist_ok=True)
     date_str = datetime.date.today().isoformat()
     unique_id = uuid.uuid4().hex[:8]
